@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+            /* <!-- Element Selector --> */
+        div{background-color: aqua;}
+
+
+    /* Class Selector Bolte */
+        .selector{
+        background-color: pink;}
+
+        /* ID Selector */
+            #yellow{
+                background-color: yellow;
+            }
+
+            /* Child Selector */
+           h4 > p {background-color: black; color: white;}
+
+           /* Descendent Selector */
+           h5 {background-color: aquamarine; }
+
+           /* Universal Selector */
+           *{
+            margin: 0;
+            padding: 0;
+           }
+        
+           /* Pseudo Selector */
+           a:visited{
+            color: orangered
+           }
+           :any-link{
+            color: green
+           }
+           a:active{
+            background-color: black;
+           }
+           a:hover {
+            background-color: pink;
+           }
+
+</style>
+  
+</head>
+<body>
+    <div>I am a Element selector</div>
+<div class="selector">I am Class selector</div>
+<div id="yellow">I am Id Selector</div>
+<h4>I am a Child Selector
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tempore asperiores autem!</p>
+    I am Descendent Selector
+        <p>Lorem ipsum dolor sit amet.</p>
+        <header>Lorem ipsum dolor sit.</header>
+        <footer>Lorem ipsum, dolor sit amet consectetur adipisicing.</footer>
+</h4>
+<style>h2{background-color: chartreuse; color: orangered}</style>
+<h2>
+Note: In child selector the BGC applied only to paragraph rather then header, footer--this is the property of child Selector. <br>
+<p>Note: In Descendent Selector BGC applied to header, footer, para -- this is the property or difference between child selector and Descendent selector. </p> </h2>
+
+    <h5>I am Descendent Selector
+        <p>Lorem ipsum dolor sit amet.</p>
+        <header>Lorem ipsum dolor sit.</header>
+        <footer>Lorem ipsum, dolor sit amet consectetur adipisicing.</footer>
+        </h5>
+
+        <a href="https://www.google.com">Open Google</a>
+        <br>
+        <a href="https://www.Flipkart.com">Open Flipkart</a><br>
+        <a href="https://www.Apple.com">Open Apple</a>
+
+
+
+
+   
+</html>
+</body>
