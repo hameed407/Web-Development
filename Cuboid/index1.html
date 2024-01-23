@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuboid</title>
+    <script>
+        function volume() {
+            var length = parseFloat(document.getElementById("Length").value);
+            var breadth = parseFloat(document.getElementById("Breadth").value);
+            var height = parseFloat(document.getElementById("Height").value);
+            var vol = length * breadth * height;
+            document.getElementById("vol").innerHTML = "Volume of Cuboid is: " + vol;
+            // alert("Volume is: " + vol);
+        }
+
+        function TotalSurfaceArea() {
+            var length = parseFloat(document.getElementById("Length").value);
+            var breadth = parseFloat(document.getElementById("Breadth").value);
+            var height = parseFloat(document.getElementById("Height").value);
+            var tsa = 2 * (length * breadth + breadth * height + height * length);
+            document.getElementById("tsa").innerHTML = "Total Surface Area of Cuboid is: " + tsa;
+            // alert("Total Surface Area is: " + tsa);
+        }
+
+        function CurvedSurfaceArea() {
+            var length = parseFloat(document.getElementById("Length").value);
+            var breadth = parseFloat(document.getElementById("Breadth").value);
+            var height = parseFloat(document.getElementById("Height").value);
+            var csa = 2 * (height * length + height * breadth);
+            document.getElementById("csa").innerHTML = "Curved Surface Area of Cuboid is: " + csa;
+            // alert("Curved Surface Area is: " + csa);
+        }
+    </script>
+
+</head>
+
+<body>
+    <label for="Length">Enter the length of the Cuboid</label>
+    <input type="number" id="Length" value=""></input><br><br>
+    <label for="Breadth">Enter the Breadth of the Cuboid</label>
+    <input type="number" id="Breadth" value=""></input><br><br>
+    <label for="Height">Enter the Height of the Cuboid</label>
+    <input type="number" id="Height" value=""></input><br><br>
+
+    <p id="vol">Volume of Cuboid is: </p>
+    <p id="tsa">Total Surface Area of Cuboid is: </p>
+    <p id="csa">Curved Suface Area of Cuboid is: </p>
+    <button onclick="volume()">Volume of Cuboid</button>
+    <button onclick="TotalSurfaceArea()">Total Surface Area of Cuboid</button>
+    <button onclick="CurvedSurfaceArea()">Curved Surface Area of Cuboid</button>
+</body>
+
+</html>
